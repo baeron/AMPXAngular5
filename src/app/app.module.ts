@@ -1,6 +1,7 @@
 import { NgModule }             from '@angular/core';
 import { BrowserModule }        from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 //
 import { HomeComponent }    from './views/home/home.component';
 import { AboutComponent }   from './views/about/about_us.component';
@@ -21,7 +22,7 @@ const appRoutes: Routes = [
 ]
 
 @NgModule({
-    imports:      [ BrowserModule, RouterModule.forRoot(appRoutes) ],
+    imports:      [ BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, ReactiveFormsModule ],
     declarations: [ AppComponent, HomeComponent, AboutComponent, ServiceComponent, ContactComponent, LoginComponent ],
     bootstrap:    [ AppComponent ]
 })
