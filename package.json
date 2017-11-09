@@ -1,0 +1,43 @@
+{
+  "name": "ampx",
+  "version": "1.0.0",
+  "description": "AMPX Angular5 App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --hot --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baeron/AMPXAngular5.git"
+  },
+  "keywords": [],
+  "author": "Ievgen Baranoff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baeron/AMPXAngular5/issues"
+  },
+  "dependencies": {
+    "@angular/common": "~5.0.0",
+    "@angular/compiler": "~5.0.0",
+    "@angular/core": "~5.0.0",
+    "@angular/forms": "~5.0.0",
+    "@angular/platform-browser": "~5.0.0",
+    "@angular/platform-browser-dynamic": "~5.0.0",
+    "@angular/router": "~5.0.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.5.2",
+    "zone.js": "^0.8.14"
+},
+"devDependencies": {
+    "@types/node": "^8.0.47",
+    "typescript": "^2.6.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1",
+    "angular2-template-loader": "^0.6.2",
+    "awesome-typescript-loader":"^3.3.0",
+    "uglifyjs-webpack-plugin":"^1.0.1"
+},
+  "homepage": "https://github.com/baeron/AMPXAngular5#readme"
+}
