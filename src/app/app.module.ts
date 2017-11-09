@@ -2,6 +2,7 @@ import { NgModule }             from '@angular/core';
 import { BrowserModule }        from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 //
+import { HomeComponent }    from './views/home/home.component';
 import { AboutComponent }   from './views/about/about_us.component';
 import { ServiceComponent } from './views/services/service.component';
 import { ContactComponent } from './views/contact/contact_us.component';
@@ -12,6 +13,7 @@ import { NotFoundComponent } from './views/not_found/not-found.component';
 import { AppComponent } from './app.component';
 
 const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'service', component: ServiceComponent },
   { path: 'contacts', component: ContactComponent },
@@ -20,7 +22,7 @@ const appRoutes: Routes = [
 
 @NgModule({
     imports:      [ BrowserModule, RouterModule.forRoot(appRoutes) ],
-    declarations: [ AppComponent, AboutComponent, ServiceComponent, ContactComponent, LoginComponent ],
+    declarations: [ AppComponent, HomeComponent, AboutComponent, ServiceComponent, ContactComponent, LoginComponent ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
