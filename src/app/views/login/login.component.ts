@@ -7,13 +7,14 @@ import {FormGroup, FormControl, Validators } from '@angular/forms'
     input.nh-touched.ng-invalid {border:solid red 2px;}
     input.nh-touched.ng-valid {border:solid green 2px;}
   `],
-  template: `<div>
+  template: `
               <div class="container">
                 <div class="row align-items-center">
+                <div class="align-self-center">
                   <div class="col-sm-10 offset-sm-1 text-center">
                     <h1 class="display-3">Customer Portal Login</h1>
                     <div class="info-form">   
-                      <form class="justify-content-center" [formGroup]="loginForm" novalidate (ngSubmit)="submit()">
+                      <form class="d-flex justify-content-center" [formGroup]="loginForm" novalidate (ngSubmit)="submit()">
                         <div class="form-group">
                           <input class="form-control" name="name" formControlName="companyName" placeholder="{{'Company Name'}}" />
                           <div class="alert alert-danger" *ngIf="loginForm.controls['companyName'].invalid && loginForm.controls['companyName'].touched">
@@ -38,11 +39,14 @@ import {FormGroup, FormControl, Validators } from '@angular/forms'
                           </button>
                         </div>
                       </form>
+                      <a routerLink="/register">Register</a>
+                      <a routerLink="/forgot_pass">Forgot password</a>
                     </div>
                   </div>
                 </div>
+                </div>
               </div>
-            </div>`
+            `
 })
 export class LoginComponent {
   loginForm: FormGroup;
