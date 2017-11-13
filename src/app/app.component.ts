@@ -39,7 +39,7 @@ template: `<div style="height: 100%;">
               </div>
             </nav>
             <router-outlet></router-outlet>
-            <div class="footer">
+            `/*<div class="footer">
               <div class="conteiner">
                 <div class="row justify-content-center" style="width: 98%;">
                   <div class="col-2">
@@ -56,7 +56,7 @@ template: `<div style="height: 100%;">
                   </div>
                 </div>
               </div>
-            </div>
-          </div>`
+            </div>*/
+          +`</div>`
 })
 export class AppComponent {}
