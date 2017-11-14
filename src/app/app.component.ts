@@ -22,6 +22,9 @@ template: `<div style="height: 100%;">
                     <a class="nav-link" routerLink="/">Home</a>
                   </li>
                   <li class="nav-item mr-auto ml-auto">
+                    <a class="nav-link" routerLink="/project">Project</a>
+                  </li>
+                  <li class="nav-item mr-auto ml-auto">
                     <a class="nav-link" routerLink="/about">About Us</a>
                   </li>
                   <li class="nav-item mr-auto ml-auto">

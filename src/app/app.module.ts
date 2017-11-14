@@ -10,7 +10,8 @@ import { ContactComponent } from './views/contact/contact_us.component';
 import { LoginComponent }   from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { ForgotComponent } from './views/forgotpass/forgotpass.component'
-
+//
+import { ProjectComponent } from './views/project/project';
 //
 import { NotFoundComponent } from './views/not_found/not-found.component';
 //
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
   { path: 'contacts', component: ContactComponent },
   { path: 'signin', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'forgot_pass', component: ForgotComponent }
+  { path: 'forgot_pass', component: ForgotComponent },
+  { path: 'project', component: ProjectComponent }
 ]
 
 @NgModule({
@@ -36,7 +38,8 @@ const appRoutes: Routes = [
       ContactComponent, 
       LoginComponent,
       RegisterComponent,
-      ForgotComponent
+      ForgotComponent,
+      ProjectComponent
      ],
     bootstrap:    [ AppComponent ]
 })
