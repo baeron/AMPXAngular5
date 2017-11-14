@@ -12,6 +12,7 @@ import { RegisterComponent } from './views/register/register.component';
 import { ForgotComponent } from './views/forgotpass/forgotpass.component'
 //
 import { ProjectComponent } from './views/project/project';
+import { ProjectMenuComponent } from './views/project/projectMenu/project_menu';
 //
 import { NotFoundComponent } from './views/not_found/not-found.component';
 //
@@ -25,7 +26,9 @@ const appRoutes: Routes = [
   { path: 'signin', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'forgot_pass', component: ForgotComponent },
-  { path: 'project', component: ProjectComponent }
+  { path: 'project', component: ProjectComponent },
+  { path: 'project/:id', component: ProjectMenuComponent },
+  { path: '**', component: NotFoundComponent }
 ]
 
 @NgModule({
@@ -39,7 +42,9 @@ const appRoutes: Routes = [
       LoginComponent,
       RegisterComponent,
       ForgotComponent,
-      ProjectComponent
+      ProjectComponent,
+      NotFoundComponent,
+      ProjectMenuComponent
      ],
     bootstrap:    [ AppComponent ]
 })
